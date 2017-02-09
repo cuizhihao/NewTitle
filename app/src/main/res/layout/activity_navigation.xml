@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_navigation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhihao.asus.newtitle.Navigation">
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/button_sou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/sellector_home_page"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="#f00"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/button_shi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/sellector_vidoe"
+            android:gravity="center"
+            android:text="视频"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/button_guan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/sellector_look"
+            android:gravity="center"
+            android:text="关注"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/button_deng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/sellector_login"
+            android:gravity="center"
+            android:text="登录"
+            android:textSize="16dp" />
+    </RadioGroup>
+  <com.zhihao.asus.newtitle.NoScrollViewPager
+      android:id="@+id/vp"
+      android:layout_above="@id/radioGroup"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+
+
+
+</RelativeLayout>
